@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Vijay Customized TestNG Suite]" parallel="methods">
+  <listeners>
+    <listener class-name="Listener1.MyReporterListener"/>
+    <listener class-name="Listener1.RetryListener"/>
+  </listeners>
+  <test thread-count="5" name="Quick Test Results(failed)" parallel="methods">
+    <classes>
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="setOutputDirectory"/>
+          <include name="loginTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+    </classes>
+  </test> <!-- Quick Test Results(failed) -->
+</suite> <!-- Failed suite [Vijay Customized TestNG Suite] -->

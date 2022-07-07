@@ -1,0 +1,15 @@
+pageObjectsPOM\MyRecordsPage.class
+pageObjects\HomePage.class
+Utilities\screenshot.class
+BrowserSetUp\ChromeDriverManager.class
+BrowserSetUp\DriverManagerFactory$1.class
+pageObjectsPOM\SignInPage.class
+BrowserSetUp\DriverManager.class
+BrowserSetUp\DriverManagerFactory.class
+pageObjects\SignInPage.class
+BrowserSetUp\DriverType.class
+pageObjectsPOM\BasePage.class
+Selfuncs\CommonFunctions.class
+pageObjects\DashboardPage.class
+SeleniumJava\Project\App.class
+pageObjectsPOM\HomePage.class

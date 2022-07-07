@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Vijay Customized TestNG Suite" parallel="methods" verbose="1">
+	<listeners>
+		<listener class-name="Listener1.MyReporterListener" />
+		<listener class-name="Listener1.RetryListener"/>
+	</listeners>
+	
+	<test thread-count="1" name="Quick Test Results">
+		<classes>
+			<class name="tests.LoginTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
