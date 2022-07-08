@@ -24,29 +24,41 @@ td,th {border:1px solid #009;padding:.25em .5em}
 <body>
 <table cellspacing="0" cellpadding="0" class="testOverview">
 <tr><th>Test</th><th>Methods<br/>Passed</th><th>Scenarios<br/>Passed</th><th># skipped</th><th># failed</th><th>Browser</th><th>Error messages</th><th>Parameters</th><th>Start<br/>Time</th><th>End<br/>Time</th><th>Total<br/>Time</th><th>Included<br/>Groups</th><th>Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em"><a href="#t1">Quick Test Results</a></td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi">0</td><td class="numi">null</td></td>
-<td class="numi"><td class="numi">12:37:23</td></td>
-<td class="numi">12:38:11</td></td>
-<td class="numi">12:38:11</td></td>
-<td class="numi">47.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t1">Quick Test Results</a></td><td class="numi">2</td><td class="numi">2</td><td class="numi_attn">2</td><td class="numi_attn">2</td><td class="numi">null</td></td>
+<td class="numi"><td class="numi">05:14:11</td></td>
+<td class="numi">05:15:47</td></td>
+<td class="numi">05:15:47</td></td>
+<td class="numi">96.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
 <tr><th>Class</th><th>Method</th><th>Exception Info</th><th>Start Time </th><th>Execution Time<br/>(hh:mm:ss)</th></tr>
-<tr id="t1"><th colspan="5">Quick Test Results &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="3">tests.LoginTest</td><td><a href="#m1"><b>openAppTest</b>  </a></td><td class="numi">1</td><td>1657177665258</td><td class="numi">443</td></tr><tr class="passedodd"><td><a href="#m2"><b>loginTest</b>  </a></td><td class="numi">1</td><td>1657177665943</td><td class="numi">9775</td></tr><tr class="passedodd"><td><a href="#m3"><b>logoutUserTest</b>  </a></td><td class="numi">1</td><td>1657177675721</td><td class="numi">3209</td></tr>
+<tr id="t1"><th colspan="5">Quick Test Results &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="2">tests.LoginTest</td><td><a href="#m1"><b>loginTest</b>  </a></td><td class="numi">1</td><td>1657280710185</td><td class="numi">30993</td></tr><tr class="failedodd"><td><a href="#m2"><b>loginTest</b>  </a></td><td class="numi">1</td><td>1657280710185</td><td class="numi">30993</td></tr>
+<tr><th colspan="5">Quick Test Results &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="2">tests.LoginTest</td><td><a href="#m3"><b>loginTest</b>  </a></td><td class="numi">1</td><td>1657280694953</td><td class="numi">15066</td></tr><tr class="skippedodd"><td><a href="#m4"><b>loginTest</b>  </a></td><td class="numi">1</td><td>1657280694953</td><td class="numi">15066</td></tr>
+<tr><th colspan="5">Quick Test Results &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">tests.LoginTest</td><td><a href="#m5"><b>openAppTest</b>  </a></td><td class="numi">1</td><td>1657280694405</td><td class="numi">314</td></tr><tr class="passedodd"><td><a href="#m6"><b>logoutUserTest</b>  </a></td><td class="numi">1</td><td>1657280741333</td><td class="numi">3132</td></tr>
 </table>
 <h1>Quick Test Results</h1>
-<h2 id="m1">tests.LoginTest:openAppTest</h2>
+<h2 id="m1">tests.LoginTest:loginTest</h2>
 <div>
-The Page Title = OrangeHRM<br/>
+<div class="stacktrace"></div>
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
 <h2 id="m2">tests.LoginTest:loginTest</h2>
 <div>
-Logged in User Name = Welcome satish<br/>
+<h3>Test Messages</h3>
+Logged in User Name = Welcome Paul1<br/>
+<h3>Failure</h3>
+<div class="stacktrace"></div>
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">tests.LoginTest:logoutUserTest</h2>
+<h2 id="m3">tests.LoginTest:openAppTest</h2>
+<div>
+The Page Title = OrangeHRM<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">tests.LoginTest:logoutUserTest</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 <center> Report customized by Hector Flores [hectorfb@gmail.com] </center>
 </body></html>

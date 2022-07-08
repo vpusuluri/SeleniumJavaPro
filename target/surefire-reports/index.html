@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Vijay_Customized_TestNG_Suite">
-              <span class="suite-name border-passed">Vijay Customized TestNG Suite</span>
+              <span class="suite-name border-failed">Vijay Customized TestNG Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,35 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,  1 skipped,  2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Vijay_Customized_TestNG_Suite" class="hide-methods failed suite-Vijay_Customized_TestNG_Suite"> (hide)</a> <!-- hide-methods failed suite-Vijay_Customized_TestNG_Suite -->
+                      <a href="#" panel-name="suite-Vijay_Customized_TestNG_Suite" class="show-methods failed suite-Vijay_Customized_TestNG_Suite"> (show)</a> <!-- show-methods failed suite-Vijay_Customized_TestNG_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Vijay_Customized_TestNG_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Vijay_Customized_TestNG_Suite" title="tests.LoginTest" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Vijay_Customized_TestNG_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Vijay_Customized_TestNG_Suite" class="hide-methods skipped suite-Vijay_Customized_TestNG_Suite"> (hide)</a> <!-- hide-methods skipped suite-Vijay_Customized_TestNG_Suite -->
+                      <a href="#" panel-name="suite-Vijay_Customized_TestNG_Suite" class="show-methods skipped suite-Vijay_Customized_TestNG_Suite"> (show)</a> <!-- show-methods skipped suite-Vijay_Customized_TestNG_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Vijay_Customized_TestNG_Suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Vijay_Customized_TestNG_Suite" title="tests.LoginTest" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Vijay_Customized_TestNG_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,11 +128,6 @@
                       <a href="#" panel-name="suite-Vijay_Customized_TestNG_Suite" class="show-methods passed suite-Vijay_Customized_TestNG_Suite"> (show)</a> <!-- show-methods passed suite-Vijay_Customized_TestNG_Suite -->
                     </span>
                     <div class="method-list-content passed suite-Vijay_Customized_TestNG_Suite">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Vijay_Customized_TestNG_Suite" title="tests.LoginTest" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Vijay_Customized_TestNG_Suite" title="tests.LoginTest" hash-for-method="logoutUserTest">logoutUserTest</a> <!-- method navigator-link -->
@@ -127,9 +150,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Vijay_Customized_TestNG_Suite" class="panel Vijay_Customized_TestNG_Suite">
-          <div class="suite-Vijay_Customized_TestNG_Suite-class-passed">
+          <div class="suite-Vijay_Customized_TestNG_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">tests.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -138,8 +161,65 @@
                   <a name="loginTest">
                   </a> <!-- loginTest -->
                   <span class="method-name">loginTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;input#txtUsername&quot;}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-C5FUFS1&apos;, ip: &apos;10.0.2.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\pvbra\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50922}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a4f89506e2b3fcfa3abba70af5542b79
+*** Element info: {Using=css selector, value=input#txtUsername}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageObjects.SignInPage.enterUsername(SignInPage.java:34)
+	at pageObjects.SignInPage.loginToSite(SignInPage.java:66)
+	at tests.LoginTest.loginTest(LoginTest.java:92)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Vijay_Customized_TestNG_Suite-class-failed -->
+          <div class="suite-Vijay_Customized_TestNG_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: LoggedInUsr expected [Welcome satish] but found [Welcome Paul1]
+	at tests.LoginTest.loginTest(LoginTest.java:96)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Vijay_Customized_TestNG_Suite-class-skipped -->
+          <div class="suite-Vijay_Customized_TestNG_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="logoutUserTest">
@@ -212,24 +292,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginTest')
 data.setCell(0, 2, 'tests.LoginTest')
-data.setCell(0, 3, 9775);
+data.setCell(0, 3, 30993);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'logoutUserTest')
+data.setCell(1, 1, 'loginTest')
 data.setCell(1, 2, 'tests.LoginTest')
-data.setCell(1, 3, 3209);
+data.setCell(1, 3, 15066);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'openAppTest')
+data.setCell(2, 1, 'logoutUserTest')
 data.setCell(2, 2, 'tests.LoginTest')
-data.setCell(2, 3, 443);
+data.setCell(2, 3, 3132);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'openAppTest')
+data.setCell(3, 2, 'tests.LoginTest')
+data.setCell(3, 3, 314);
 window.suiteTableData['Vijay_Customized_TestNG_Suite']= { tableData: data, tableDiv: 'times-div-Vijay_Customized_TestNG_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 49 seconds</span>
               <div id="times-div-Vijay_Customized_TestNG_Suite">
               </div> <!-- times-div-Vijay_Customized_TestNG_Suite -->
             </div> <!-- times-div -->
@@ -249,7 +333,7 @@ return data;
             <div class="reporter-method-div">
               <span class="reporter-method-name">loginTest</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Logged in User Name = Welcome satish</span>
+                <span class="reporter-method-output">Logged in User Name = Welcome Paul1</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -269,28 +353,34 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">setOutputDirectory(org.testng.TestRunner@24cdaf9e)</span>
+                <span class="method-name">setOutputDirectory(org.testng.TestRunner@6a00397c)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">23 ms</span>
+                <span class="method-start">33 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">openAppTest</span>
-                <span class="method-start">21595 ms</span>
+                <span class="method-start">42681 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginTest</span>
-                <span class="method-start">22280 ms</span>
+                <span class="method-start">43229 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginTest</span>
+                <span class="method-start">58461 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">logoutUserTest</span>
-                <span class="method-start">32058 ms</span>
+                <span class="method-start">89609 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">35269 ms</span>
+                <span class="method-start">92811 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

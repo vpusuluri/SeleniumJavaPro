@@ -93,7 +93,7 @@ public class LoginTest  extends BaseTest
 	  //Thread.sleep(3000);;
 	  String uname = homepage.getLoggedInUser();
 	  Reporter.log("Logged in User Name = " + uname);
-	  Assert.assertEquals(uname, "Welcome satish", "LoggedInUsr");
+	  Assert.assertEquals(uname, "Welcome Paul1", "LoggedInUsr");
   }
   
   @Test(priority=3)
